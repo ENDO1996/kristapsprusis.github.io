@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kristaps Prūsis — Remote Video Editor</title>
+  <meta name="description" content="Online Courses · Social/Ads · Narrative · Finishing & Polish. Reel-first portfolio of Kristaps Prūsis." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Background layers -->
+  <div class="bg-wrap">
+    <div class="blob one"></div>
+    <div class="blob two"></div>
+    <div class="blob three"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">Kristaps Prūsis</div>
+      <nav>
+        <a href="#reel">Reel</a>
+        <div class="menu">
+          <button onclick="location.href='#reels'">Work ▾</button>
+          <div class="dropdown">
+            <a href="courses.html">Online Courses / Education</a>
+            <a href="ads.html">Social Media / Ads</a>
+            <a href="narrative.html">Narrative (Doc / Shorts)</a>
+            <a href="finishing.html">Finishing &amp; Polish</a>
+          </div>
+        </div>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero / Master Reel FULL WIDTH, text + CTA below -->
+    <section id="reel" class="section">
+      <div class="grid-full">
+        <div class="video-embed">
+          <!-- Replace YT_MASTER with your YouTube ID -->
+          <iframe src="https://www.youtube-nocookie.com/embed/YT_MASTER?autoplay=1&mute=1&controls=0&loop=1&playlist=YT_MASTER&modestbranding=1&rel=0"></iframe>
+        </div>
+        <div class="hero-meta">
+          <span class="badge">Ads</span>
+          <span class="badge">Online Courses</span>
+          <span class="badge">Narrative</span>
+          <span class="badge">Finishing &amp; Polish</span>
+          <span style="flex:1"></span>
+          <a class="btn btn-primary" href="mailto:kristaps@example.com">Hire me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Reels -->
+    <section id="reels" class="section">
+      <div class="section-top">
+        <h2>Category Reels</h2>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <div class="video-embed">
+            <iframe src="https://www.youtube-nocookie.com/embed/YT_COURSES?autoplay=1&mute=1&controls=0&loop=1&playlist=YT_COURSES&modestbranding=1&rel=0"></iframe>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Online Courses / Education</div>
+            <div class="card-sub">20–35s micro‑reel</div>
+            <a class="card-link" href="courses.html">See full videos →</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="video-embed">
+            <iframe src="https://www.youtube-nocookie.com/embed/YT_ADS?autoplay=1&mute=1&controls=0&loop=1&playlist=YT_ADS&modestbranding=1&rel=0"></iframe>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Social Media / Ads</div>
+            <div class="card-sub">20–35s micro‑reel</div>
+            <a class="card-link" href="ads.html">See full videos →</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="video-embed">
+            <iframe src="https://www.youtube-nocookie.com/embed/YT_NARR?autoplay=1&mute=1&controls=0&loop=1&playlist=YT_NARR&modestbranding=1&rel=0"></iframe>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Narrative (Doc / Shorts)</div>
+            <div class="card-sub">20–35s micro‑reel</div>
+            <a class="card-link" href="narrative.html">See full videos →</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="video-embed">
+            <iframe src="https://www.youtube-nocookie.com/embed/YT_FINISH?autoplay=1&mute=1&controls=0&loop=1&playlist=YT_FINISH&modestbranding=1&rel=0"></iframe>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Finishing &amp; Polish</div>
+            <div class="card-sub">20–35s micro‑reel</div>
+            <a class="card-link" href="finishing.html">See breakdowns →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / expanded with centered photo + socials -->
+    <section id="about" class="section">
+      <div class="about">
+        <div>
+          <h2>About</h2>
+          <p class="muted">I’m Kristaps, a Latvia‑based video editor focused on <strong>Online Courses</strong>, <strong>Social/Ads</strong>, and <strong>Narrative</strong>. I care about rhythm, clarity, and getting to the point fast. My background spans music videos with multi‑million views, short films (festival wins), and a feature‑length travel documentary—experience I now pour into commercial editing where outcomes matter.</p>
+          <p class="muted">Workflow: DaVinci Resolve Studio, Frame.io collaboration, proxy pipelines for remote teams, color‑managed delivery (Rec.709), multi‑language subtitles, and tight QC. Typical turnaround: short‑form 24–72h; trailers 3–5 days (scope dependent). Languages: LV / EN · Time zone: EET.</p>
+        </div>
+        <div class="avatar-wrap">
+          <img src="img/me.jpg" alt="Kristaps Prūsis" class="avatar" />
+          <div class="socials">
+            <a href="#" aria-label="YouTube" title="YouTube">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2s-.2-1.6-.8-2.3c-.8-.8-1.7-.8-2.1-.9C17.3 2.7 12 2.7 12 2.7h0s-5.3 0-8.6.3c-.4 0-1.3.1-2.1.9C.7 4.6.5 6.2.5 6.2S0 8.2 0 10.2v1.6c0 2 .5 4  .5 4s.2 1.6.8 2.3c.8.8 1.9.8 2.4.9 1.7.2 7.3.3 7.3.3s5.3 0 8.6-.3c.4 0 1.3-.1 2.1-.9.6-.7.8-2.3.8-2.3s.5-2 .5-4v-1.6c0-2-.5-4-.5-4ZM9.7 13.9V7.9l6.1 3-6.1 3Z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram" title="Instagram">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5Zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5Zm5.8-2.8a1 1 0 1 1-1.4 1.4 1 1 0 0 1 1.4-1.4Z"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook" title="Facebook">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22V12h3l1-4h-4V6c0-1.1.9-2 2-2h2V0h-3a5 5 0 0 0-5 5v3H6v4h3v10h4Z"/></svg>
+            </a>
+            <a href="mailto:kristaps@example.com" aria-label="Email" title="Email">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M2 4h20a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 2v.5l10 6.25L22 6.5V6H2Zm20 12V8.7l-9.4 5.9a1 1 0 0 1-1.2 0L2 8.7V18h20Z"/></svg>
+            </a>
+            <a href="https://wa.me/0000000000" aria-label="WhatsApp" title="WhatsApp">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M.1 24l1.7-6A10.9 10.9 0 1 1 12 23a10.8 10.8 0 0 1-5.2-1.3L.1 24ZM12 3.1A8.9 8.9 0 0 0 3.1 12c0 1.6.4 3 1.1 4.3l.2.3-.9 3.1 3.2-.9.3.2a8.9 8.9 0 1 0 5-15.9Zm5.2 11.7c-.2-.1-1.3-.6-1.5-.7s-.4-.1-.6.1-.7.7-.9.8-.3.1-.5 0a7.3 7.3 0 0 1-2.2-1.4A8.1 8.1 0 0 1 8.6 11c-.1-.2 0-.4.1-.5l.4-.4c.2-.2.3-.3.4-.5.1-.2 0-.4 0-.5l-.6-1.3c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.8-.9 2s.9 2.3 1 2.5c.1.2 1.8 2.8 4.3 3.9.6.2 1 .4 1.3.5.6.2 1.1.2 1.5.1.5-.1 1.3-.5 1.4-1 .1-.5.1-1 .1-1.1 0-.1-.1-.2-.3-.3Z"/></svg>
+            </a>
+            <a href="https://open.spotify.com/user/yourid" aria-label="Spotify" title="Spotify">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0a12 12 0 1 0 0 24A12 12 0 0 0 12 0Zm5.5 17.3a.8.8 0 0 1-1.1.3 11.9 11.9 0 0 0-11.8 0 .8.8 0 1 1-.8-1.4 13.6 13.6 0 0 1 13.4 0c.4.2.5.7.3 1.1Zm1.6-3.1a1 1 0 0 1-1.3.3 15.8 15.8 0 0 0-14.9 0 1 1 0 0 1-.9-1.8 17.6 17.6 0 0 1 16.7 0c.5.3.7 1 .4 1.5Zm.1-3.5c-.3.4-.9.5-1.3.3a19.8 19.8 0 0 0-8.8-2.1c-3.1 0-6 .7-8.8 2.1-.5.2-1-.1-1.2-.6s0-1 .5-1.2C6 7.6 8.9 6.8 12 6.8c3.1 0 6 .8 8.8 2.1.6.2.8.8.4 1.3Z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="card contact">
+        <div>
+          <h2>Let’s cut something great.</h2>
+          <p class="muted">Email <a href="mailto:kristaps@example.com">kristaps@example.com</a> or book a 15‑min call.</p>
+        </div>
+        <div class="btns">
+          <a class="btn btn-primary" href="mailto:kristaps@example.com">Email</a>
+          <a class="btn btn-ghost" href="#">Book a call</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© 2025 Kristaps Prūsis — Portfolio</footer>
+</body>
+</html>
