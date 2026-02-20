@@ -105,3 +105,37 @@ p { line-height: 1.72; }
 @media (max-width: 680px) {
   .grid-2 { grid-template-columns: 1fr; }
 }
+
+/* Prompt Launchpad */
+.launchpad-shell { margin-top: 12px; }
+.launchpad-textarea {
+  width: 100%;
+  min-height: 130px;
+  resize: vertical;
+  border-radius: 12px;
+  border: 1px solid var(--ring);
+  background: rgba(255,255,255,.03);
+  color: var(--text);
+  padding: 12px;
+  font: inherit;
+}
+.launchpad-row { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-top: 12px; }
+.launchpad-grid { display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:16px; }
+.launchpad-destination { display:flex; flex-direction:column; gap:6px; }
+.launchpad-destination-top { display:flex; align-items:center; gap:10px; }
+.launchpad-destination-top strong { flex:1; }
+.launchpad-input {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--ring);
+  background: rgba(255,255,255,.03);
+  color: var(--text);
+  padding: 10px;
+  font: inherit;
+}
+.field-label { font-size: .8rem; color: var(--sub); margin-top: 2px; }
+.btn-small { padding: 8px 10px; font-size: .8rem; }
+
+@media (max-width: 780px) {
+  .launchpad-grid { grid-template-columns: 1fr; }
+}
