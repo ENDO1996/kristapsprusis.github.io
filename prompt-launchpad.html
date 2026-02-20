@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompt Launchpad</title>
+  <meta name="description" content="Send one prompt to multiple AI generation tools faster." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-wrap">
+    <div class="blob one"></div>
+    <div class="blob two"></div>
+    <div class="blob three"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">Prompt Launchpad</div>
+      <nav>
+        <a href="index.html">Portfolio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <section class="card launchpad-shell">
+      <div class="card-body">
+        <h1>One prompt. Many tools.</h1>
+        <p class="muted">This page helps you launch your prompt across multiple sites you are already logged into. Some sites allow pre-filled prompts, others require paste + submit due browser security rules.</p>
+
+        <label class="field-label" for="prompt">Prompt</label>
+        <textarea id="prompt" class="launchpad-textarea" placeholder="Example: Cinematic drone shot over a rainy cyberpunk city, 24fps, realistic lighting"></textarea>
+
+        <div class="launchpad-row">
+          <button id="copyPrompt" class="btn btn-ghost" type="button">Copy prompt</button>
+          <button id="openSelected" class="btn btn-primary" type="button">Open selected sites</button>
+          <span id="status" class="muted"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-top">
+        <h2>Destinations</h2>
+        <p class="muted">Tip: click a row to edit URL templates. Use <code>{prompt}</code> where the encoded prompt should be inserted.</p>
+      </div>
+      <div id="destinations" class="launchpad-grid"></div>
+      <div class="launchpad-row">
+        <button id="addDestination" class="btn btn-ghost" type="button">Add custom destination</button>
+      </div>
+    </section>
+
+
+
+    <section class="card">
+      <div class="card-body">
+        <h2>5-minute setup (no coding needed)</h2>
+        <ol class="muted">
+          <li>Download these files to one folder: <code>prompt-launchpad.html</code>, <code>prompt-launchpad.js</code>, <code>styles.css</code>.</li>
+          <li><strong>Windows:</strong> double-click <code>run-launchpad.bat</code>.<br><strong>Mac/Linux:</strong> run <code>run-launchpad.command</code>.</li>
+          <li>Bookmark <code>http://localhost:4173/prompt-launchpad.html</code>.</li>
+          <li>Allow popups for this page once, so multi-tab open works.</li>
+          <li>Optional: in Chrome/Edge use “Install app” / “Create shortcut” for one-click opening.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-body">
+        <h2>How this works</h2>
+        <ul class="muted">
+          <li>For each selected site, this tool opens a new tab.</li>
+          <li>If a URL template contains <code>{prompt}</code>, the prompt is pre-filled in the URL.</li>
+          <li>If not, the site still opens and your prompt is copied so you can paste and hit generate.</li>
+          <li>Your destination list is saved in your browser (localStorage).</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="prompt-launchpad.js"></script>
+</body>
+</html>
