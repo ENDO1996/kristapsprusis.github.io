@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Dante Inferno Reader - Complete Inferno</title>
+  <link rel="stylesheet" href="styles.css?v=canto-02-no-indent-1">
+</head>
+<body>
+  <header class="hero">
+    <img id="heroArt" src="assets/dark-wood.svg" alt="" class="hero-art">
+    <div class="hero-shade"></div>
+    <nav class="topbar" aria-label="Reader navigation">
+      <div class="brand">
+        <span class="mark">I</span>
+        <span>Inferno Reader</span>
+      </div>
+      <div id="heroSource" class="source-pill" role="button" tabindex="0" title="Open chapter image">Complete Inferno</div>
+    </nav>
+    <section class="hero-copy">
+      <p class="kicker">Dante Alighieri / Inferno</p>
+      <h1>Dante's Inferno Reader</h1>
+      <p>
+        A side-by-side reader for the classic Longfellow translation, a plain modern rendering,
+        and beginner-friendly notes.
+      </p>
+    </section>
+  </header>
+
+  <main>
+    <section class="controls" aria-label="Reader controls">
+      <label class="search">
+        <span>Search</span>
+        <input id="searchInput" type="search" placeholder="forest, Virgil, she-wolf...">
+      </label>
+      <div class="segmented" aria-label="Visible columns">
+        <label><input type="checkbox" data-column="classic" checked> Classic</label>
+        <label><input type="checkbox" data-column="modern" checked> Modern</label>
+        <label><input type="checkbox" data-column="notes" checked> Notes</label>
+      </div>
+      <div class="mobile-view-switch" aria-label="Reading view">
+        <button type="button" data-mobile-view="classic" aria-pressed="true">Classic</button>
+        <button type="button" data-mobile-view="modern" aria-pressed="false">Modern</button>
+        <button type="button" data-mobile-view="notes" aria-pressed="false">Notes</button>
+      </div>
+      <div class="density" aria-label="Text size">
+        <button type="button" id="decreaseText" title="Decrease text size">A-</button>
+        <button type="button" id="increaseText" title="Increase text size">A+</button>
+      </div>
+      <label class="canto-select">
+        <span>Canto</span>
+        <select id="cantoSelect" aria-label="Choose canto"></select>
+      </label>
+    </section>
+
+    <section class="context-band">
+      <article>
+        <h2>How To Read This Test</h2>
+        <p>
+          The modern column is intentionally direct, not decorative. It follows the meaning of each
+          passage so a new reader can keep moving without losing the symbolic shape of the poem.
+        </p>
+      </article>
+      <article>
+        <h2>Source</h2>
+        <p>
+          Classic text: Henry Wadsworth Longfellow's public-domain translation from Project Gutenberg.
+          Notes and modern rendering are newly written for this prototype.
+        </p>
+      </article>
+    </section>
+
+    <section id="reader" class="reader" aria-live="polite"></section>
+  </main>
+
+  <div id="imageLightbox" class="image-lightbox" aria-hidden="true">
+    <div class="lightbox-toolbar" aria-label="Image zoom controls">
+      <button id="zoomOutImage" type="button" title="Zoom out">A-</button>
+      <button id="fitImage" type="button" title="Fit image to screen">Fit</button>
+      <button id="zoomInImage" type="button" title="Zoom in">A+</button>
+      <span id="zoomLevel">125%</span>
+    </div>
+    <button id="closeLightbox" class="lightbox-close" type="button" aria-label="Close full screen image">×</button>
+    <figure>
+      <div class="lightbox-stage">
+        <img id="lightboxImage" src="" alt="">
+      </div>
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+  </div>
+
+  <footer>
+    <p>Built as a dark-mode reader for the full Inferno. Classic translation, modern retelling, and guided notes.</p>
+  </footer>
+
+  <script src="cantos-extra.js"></script>
+  <script src="canto-02-rebuild.js?v=canto-02-no-indent-1"></script>
+  <script src="canto-03-rebuild.js?v=canto-03-rebuild-1"></script>
+  <script src="canto-04-rebuild.js?v=canto-04-rebuild-1"></script>
+  <script src="canto-05-rebuild.js?v=canto-05-rebuild-1"></script>
+  <script src="canto-06-rebuild.js?v=canto-06-rebuild-1"></script>
+  <script src="canto-07-rebuild.js?v=canto-07-rebuild-1"></script>
+  <script src="canto-08-rebuild.js?v=canto-08-rebuild-1"></script>
+  <script src="canto-09-rebuild.js?v=canto-09-rebuild-1"></script>
+  <script src="canto-10-rebuild.js?v=canto-10-rebuild-1"></script>
+  <script src="canto-11-rebuild.js?v=canto-11-rebuild-1"></script>
+  <script src="canto-12-rebuild.js?v=canto-12-rebuild-1"></script>
+  <script src="canto-13-rebuild.js?v=canto-13-rebuild-1"></script>
+  <script src="canto-14-rebuild.js?v=canto-14-rebuild-1"></script>
+  <script src="canto-15-rebuild.js?v=canto-15-rebuild-1"></script>
+  <script src="canto-16-rebuild.js?v=canto-16-rebuild-1"></script>
+  <script src="canto-17-rebuild.js?v=canto-17-rebuild-1"></script>
+  <script src="canto-18-rebuild.js?v=canto-18-rebuild-1"></script>
+  <script src="canto-19-rebuild.js?v=canto-19-rebuild-1"></script>
+  <script src="canto-20-rebuild.js?v=canto-20-rebuild-1"></script>
+  <script src="canto-21-rebuild.js?v=canto-21-rebuild-1"></script>
+  <script src="canto-22-rebuild.js?v=canto-22-rebuild-1"></script>
+  <script src="canto-23-rebuild.js?v=canto-23-rebuild-1"></script>
+  <script src="canto-24-rebuild.js?v=canto-24-rebuild-1"></script>
+  <script src="canto-25-rebuild.js?v=canto-25-rebuild-1"></script>
+  <script src="canto-26-rebuild.js?v=canto-26-rebuild-1"></script>
+  <script src="canto-27-rebuild.js?v=canto-27-rebuild-1"></script>
+  <script src="canto-28-rebuild.js?v=canto-28-rebuild-1"></script>
+  <script src="canto-29-rebuild.js?v=canto-29-rebuild-1"></script>
+  <script src="canto-30-rebuild.js?v=canto-30-rebuild-1"></script>
+  <script src="canto-31-rebuild.js?v=canto-31-rebuild-1"></script>
+  <script src="canto-32-rebuild.js?v=canto-32-rebuild-1"></script>
+  <script src="canto-33-rebuild.js?v=canto-33-rebuild-1"></script>
+  <script src="canto-34-rebuild.js?v=canto-34-rebuild-1"></script>
+  <script src="cantos-rest.js"></script>
+  <script src="flaxman-illustrations.js?v=canto-34-placement-1"></script>
+  <script src="hero-images.js"></script>
+  <script src="app.js?v=canto-34-rebuild-1"></script>
+</body>
+</html>

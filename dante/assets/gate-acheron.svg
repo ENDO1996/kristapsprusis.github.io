@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1000" role="img" aria-label="The gate of Hell above a dark river">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#030405"/>
+      <stop offset=".55" stop-color="#17100f"/>
+      <stop offset="1" stop-color="#3b1410"/>
+    </linearGradient>
+    <radialGradient id="fire" cx="52%" cy="38%" r="42%">
+      <stop offset="0" stop-color="#b6533b" stop-opacity=".65"/>
+      <stop offset=".42" stop-color="#5b241c" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#050608" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="7"/></filter>
+  </defs>
+  <rect width="1800" height="1000" fill="url(#bg)"/>
+  <rect width="1800" height="1000" fill="url(#fire)"/>
+  <path d="M640 850 L640 316 C640 214 724 150 900 150 C1076 150 1160 214 1160 316 L1160 850 Z" fill="#07080a"/>
+  <path d="M730 850 L730 346 C730 270 782 236 900 236 C1018 236 1070 270 1070 346 L1070 850 Z" fill="#151015"/>
+  <path d="M700 344 C760 278 1040 278 1100 344" fill="none" stroke="#5a3024" stroke-width="10" opacity=".7"/>
+  <path d="M0 780 C270 720 425 760 650 730 C920 694 1160 650 1800 730 L1800 1000 L0 1000 Z" fill="#07080a"/>
+  <path d="M0 820 C260 870 510 805 760 842 C1000 878 1260 880 1800 812 L1800 1000 L0 1000 Z" fill="#0d1114"/>
+  <path d="M0 855 C290 900 520 850 780 884 C1040 918 1310 900 1800 848" fill="none" stroke="#425260" stroke-width="8" opacity=".35"/>
+  <g fill="#050607" opacity=".86">
+    <path d="M1160 760 C1210 720 1280 724 1330 765 C1275 790 1218 792 1160 760 Z"/>
+    <path d="M1232 735 L1262 735 L1252 650 L1240 650 Z"/>
+  </g>
+  <g filter="url(#soft)" opacity=".82">
+    <circle cx="900" cy="450" r="38" fill="#b6533b"/>
+    <circle cx="820" cy="505" r="20" fill="#d7a84f"/>
+    <circle cx="980" cy="510" r="20" fill="#d7a84f"/>
+  </g>
+</svg>

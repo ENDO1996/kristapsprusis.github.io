@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1000" role="img" aria-label="A dark forest opening toward a distant hill">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#050608"/>
+      <stop offset="0.48" stop-color="#101612"/>
+      <stop offset="1" stop-color="#5a351e"/>
+    </linearGradient>
+    <radialGradient id="dawn" cx="72%" cy="38%" r="38%">
+      <stop offset="0" stop-color="#e3ad53" stop-opacity=".82"/>
+      <stop offset=".32" stop-color="#936033" stop-opacity=".36"/>
+      <stop offset="1" stop-color="#050608" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ground" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#162019"/>
+      <stop offset="1" stop-color="#060708"/>
+    </linearGradient>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+  <rect width="1800" height="1000" fill="url(#sky)"/>
+  <rect width="1800" height="1000" fill="url(#dawn)"/>
+  <path d="M0 742 C260 650 460 670 660 610 C920 530 1090 422 1360 460 C1570 490 1680 600 1800 580 L1800 1000 L0 1000 Z" fill="#121913"/>
+  <path d="M0 790 C260 700 560 760 820 690 C1100 610 1300 560 1800 650 L1800 1000 L0 1000 Z" fill="url(#ground)"/>
+  <g opacity=".88">
+    <path d="M105 1000 L150 1000 L132 0 Z" fill="#040506"/>
+    <path d="M248 1000 L298 1000 L276 -50 Z" fill="#060708"/>
+    <path d="M405 1000 L456 1000 L438 30 Z" fill="#050607"/>
+    <path d="M1470 1000 L1525 1000 L1502 -20 Z" fill="#040506"/>
+    <path d="M1625 1000 L1684 1000 L1658 70 Z" fill="#060708"/>
+  </g>
+  <g stroke="#060708" stroke-width="18" stroke-linecap="round" opacity=".92">
+    <path d="M136 310 C70 220 58 150 38 60"/>
+    <path d="M145 280 C220 190 250 120 280 38"/>
+    <path d="M438 380 C360 270 335 170 315 80"/>
+    <path d="M1502 285 C1400 190 1370 130 1340 52"/>
+    <path d="M1508 338 C1600 248 1645 160 1690 70"/>
+  </g>
+  <ellipse cx="915" cy="820" rx="420" ry="60" fill="#090a0c" opacity=".75" filter="url(#soft)"/>
+  <path d="M850 772 C870 725 900 704 930 704 C960 704 990 728 1008 774 C958 758 900 758 850 772 Z" fill="#08090a"/>
+  <path d="M916 703 C904 660 912 625 938 600 C968 632 972 669 956 704 Z" fill="#0b0c0e"/>
+  <path d="M330 700 C372 662 423 650 475 672 C430 694 385 706 330 700 Z" fill="#090a0c" opacity=".64"/>
+  <path d="M1370 666 C1420 628 1488 625 1538 662 C1480 684 1422 688 1370 666 Z" fill="#08090a" opacity=".62"/>
+  <path d="M1205 620 C1240 574 1294 560 1342 586 C1292 610 1250 626 1205 620 Z" fill="#08090a" opacity=".48"/>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1000" role="img" aria-label="A dark descent watched over by three lights in heaven">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#050608"/>
+      <stop offset=".48" stop-color="#11131a"/>
+      <stop offset="1" stop-color="#37233b"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="66%" cy="23%" r="44%">
+      <stop offset="0" stop-color="#e8c979" stop-opacity=".8"/>
+      <stop offset=".28" stop-color="#8d6ea8" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#050608" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="9"/></filter>
+  </defs>
+  <rect width="1800" height="1000" fill="url(#bg)"/>
+  <rect width="1800" height="1000" fill="url(#halo)"/>
+  <path d="M0 760 C220 670 470 700 680 622 C955 520 1120 470 1800 600 L1800 1000 L0 1000 Z" fill="#090a0c"/>
+  <path d="M280 1000 C430 772 560 630 760 530 C910 455 1100 420 1250 355" fill="none" stroke="#202532" stroke-width="34" stroke-linecap="round" opacity=".72"/>
+  <path d="M292 1000 C438 780 566 646 768 546 C930 465 1110 432 1264 366" fill="none" stroke="#d7a84f" stroke-width="4" stroke-linecap="round" opacity=".45"/>
+  <g filter="url(#blur)" opacity=".95">
+    <circle cx="1210" cy="190" r="34" fill="#f0d28a"/>
+    <circle cx="1324" cy="242" r="28" fill="#e7bddf"/>
+    <circle cx="1110" cy="252" r="24" fill="#dfe8ff"/>
+  </g>
+  <g fill="#07080a">
+    <path d="M600 830 C622 760 660 736 696 760 C718 788 713 830 720 886 L575 886 C586 858 590 842 600 830 Z"/>
+    <path d="M668 754 C658 720 664 690 688 672 C710 694 713 722 702 754 Z"/>
+    <path d="M790 790 C812 735 852 718 882 746 C902 780 900 826 910 886 L760 886 C778 846 780 812 790 790 Z" opacity=".72"/>
+  </g>
+  <path d="M0 880 C330 820 560 855 845 810 C1130 765 1420 792 1800 720 L1800 1000 L0 1000 Z" fill="#050607" opacity=".88"/>
+</svg>
